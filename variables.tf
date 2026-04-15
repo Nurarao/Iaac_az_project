@@ -1,19 +1,19 @@
 variable "environment" {
   type        = string
   description = "the env type"
-  default     = "staging"
+  # default     = "staging"
 }
 
 variable "storage_disk" {
   type        = number
   description = " the storage disk size"
-  default     = 80
+  # default     = 80
 }
 
 variable "is_delete" {
   type        = bool
   description = "the default behavior to os disk upon vm termination"
-  default     = true
+  # default     = true
 }
 
 variable "allowed_locations" {
@@ -25,11 +25,11 @@ variable "allowed_locations" {
 variable "resource_tags" {
   type        = map(string)
   description = "tags to apply resources"
-  default = {
-    "environment" = "staging"
-    "managed_by"  = "terraform"
-    "department"  = "devops"
-  }
+  # default = {
+  #   "environment" = "staging"
+  #   "managed_by"  = "terraform"
+  #   "department"  = "devops"
+  # }
 }
 
 variable "network_config" {
